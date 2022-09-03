@@ -9,6 +9,22 @@ namespace Produto_teste
         public double Preco;
         public int Quantidade;
 
+ 
+        public Produto(string nome, double preco, int quantidade)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = quantidade;
+        }
+
+        public Produto(string nome, double preco)
+        {
+            Nome = nome;
+            Preco = preco;
+            Quantidade = 0;
+        }
+
+
         public double ValorTotalEmEstoque()
         {
             return Preco * Quantidade;
